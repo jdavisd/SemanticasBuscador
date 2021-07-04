@@ -1,0 +1,1086 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5"
+     xml:base="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+     xmlns:ns="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:wot="http://xmlns.com/wot/0.1/"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:untitled-ontology-5="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5">
+        <owl:imports rdf:resource="http://xmlns.com/foaf/0.1/"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#AereoEsUn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#AereoEsUn">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#EsAereo"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Aereo"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Avion"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Helicoptero"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#EsAereo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#EsAereo">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Avion"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Helicoptero"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Aereo"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#EsMaritimo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#EsMaritimo">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#MaritimoEsUn"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Bote"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#MotoDeAgua"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Maritimo"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#EsParteDe -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#EsParteDe">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#TieneCategorias"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Vehiculo"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Aereo"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Maritimo"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Terrestre"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#EsTerrestre -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#EsTerrestre">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#TerrestreEsUn"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Automovil"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Bicicleta"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Motocicleta"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Tren"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Terrestre"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#MaritimoEsUn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#MaritimoEsUn">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Maritimo"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Bote"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#MotoDeAgua"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#TerrestreEsUn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#TerrestreEsUn">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Terrestre"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Automovil"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Bicicleta"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Motocicleta"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Tren"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#TieneCategorias -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#TieneCategorias">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Aereo"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Maritimo"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Terrestre"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Vehiculo"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#A -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#A">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Licencia"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#MotoDeAgua"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Automatica -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Automatica">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Caja"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Automovil"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#B -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#B">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Licencia"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#MotoDeAgua"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Bueno -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Bueno">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#EstadoTimon"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Bote"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#C -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#C">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Licencia"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#MotoDeAgua"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Caja -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Caja">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Automovil"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#CapAltura -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#CapAltura">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Aereo"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Capacidad -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Capacidad">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Vehiculo"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#CapacidadMaletero -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#CapacidadMaletero">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Automovil"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Chasis -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Chasis">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Automovil"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Clase -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Clase">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Avion"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Color -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Color">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Vehiculo"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Combustible -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Combustible">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Vehiculo"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Comercial -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Comercial">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Clase"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Avion"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Conduccion -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Conduccion">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#MotoDeAgua"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Convertible -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Convertible">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Automovil"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Destino -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Destino">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Tren"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Diesel -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Diesel">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Combustible"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Tren"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Electricidad -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Electricidad">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Combustible"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Tren"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Empresa -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Empresa">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Propietario"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Avion"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#EnUso -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#EnUso">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Estado"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Aereo"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#EquipoSeguridad -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#EquipoSeguridad">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Bote"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#EquipoSonido -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#EquipoSonido">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Vehiculo"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Estado -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Estado">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Aereo"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#EstadoTimon -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#EstadoTimon">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Bote"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#EstadoVehiculo -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#EstadoVehiculo">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Terrestre"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Externa -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Externa">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Helices"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Gas -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Gas">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Combustible"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Aereo"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Gasolina -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Gasolina">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Combustible"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Helices -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Helices"/>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Interna -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Interna">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Helices"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#MotoDeAgua"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Internacional -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Internacional">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Destino"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Kilometraje -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Kilometraje">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Vehiculo"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Licencia -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Licencia">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#MotoDeAgua"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Longitud -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Longitud">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Terrestre"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Luces -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Luces">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Terrestre"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Malo -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Malo">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#EstadoTimon"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Bote"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Mantenimiento -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Mantenimiento">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Estado"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Aereo"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Manual -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Manual">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Caja"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Automovil"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Marca -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Marca">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Vehiculo"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Material -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Material">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Bicicleta"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Matricula -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Matricula">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Vehiculo"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Medio -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Medio">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#EstadoTimon"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Bote"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Modelo -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Modelo">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Vehiculo"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Molinete -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Molinete">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Maritimo"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Motor -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Motor">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Vehiculo"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Nacional -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Nacional">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Destino"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#NroConductores -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#NroConductores">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Bicicleta"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#NroHelices -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#NroHelices">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Helicoptero"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#NroRuedas -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#NroRuedas">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Terrestre"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#NroVagones -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#NroVagones">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Tren"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Nuevo -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Nuevo">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#EstadoVehiculo"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Terrestre"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#NumeroAsientos -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#NumeroAsientos">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Vehiculo"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Peso -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Peso">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Vehiculo"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Pie -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Pie">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Conduccion"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#MotoDeAgua"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Piloto -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Piloto">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Automovil"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Plotter -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Plotter">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Maritimo"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Potencia -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Potencia">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#MotoDeAgua"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Privado -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Privado">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Propietario"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Avion"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Propietario -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Propietario">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Avion"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Puertas -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Puertas">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Automovil"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#RegistroVehic -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#RegistroVehic">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Terrestre"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#SOAT -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#SOAT">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Automovil"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Seguro -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Seguro">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Vehiculo"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#SemiNuevo -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#SemiNuevo">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#EstadoVehiculo"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Terrestre"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Sentado -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Sentado">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Conduccion"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#MotoDeAgua"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Tickets -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Tickets">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Tren"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Usado -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Usado">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#EstadoVehiculo"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Terrestre"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#VIP -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#VIP">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Clase"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Avion"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Aereo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Aereo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Vehiculo"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Automovil -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Automovil">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Terrestre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Avion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Avion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Aereo"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Bicicleta -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Bicicleta">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Terrestre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Bote -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Bote">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Maritimo"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Helicoptero -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Helicoptero">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Aereo"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Maritimo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Maritimo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Vehiculo"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#MotoDeAgua -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#MotoDeAgua">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Maritimo"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Motocicleta -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Motocicleta">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Terrestre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Terrestre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Terrestre">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Vehiculo"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Tren -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Tren">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Terrestre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Vehiculo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Vehiculo"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Automovil -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Automovil">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Automovil"/>
+        <owl:sameAs rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Bus"/>
+        <untitled-ontology-5:Capacidad rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</untitled-ontology-5:Capacidad>
+        <untitled-ontology-5:Chasis>232SADEW213DS1</untitled-ontology-5:Chasis>
+        <untitled-ontology-5:Color>Naranja</untitled-ontology-5:Color>
+        <untitled-ontology-5:Convertible rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-5:Convertible>
+        <untitled-ontology-5:EquipoSonido rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-5:EquipoSonido>
+        <untitled-ontology-5:Gasolina></untitled-ontology-5:Gasolina>
+        <untitled-ontology-5:Kilometraje rdf:datatype="http://www.w3.org/2001/XMLSchema#int">0</untitled-ontology-5:Kilometraje>
+        <untitled-ontology-5:Longitud rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.0</untitled-ontology-5:Longitud>
+        <untitled-ontology-5:Luces rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-5:Luces>
+        <untitled-ontology-5:Manual></untitled-ontology-5:Manual>
+        <untitled-ontology-5:Marca>Toyota</untitled-ontology-5:Marca>
+        <untitled-ontology-5:Matricula>131-EXU</untitled-ontology-5:Matricula>
+        <untitled-ontology-5:Modelo>Supra</untitled-ontology-5:Modelo>
+        <untitled-ontology-5:Motor>Toyota 767</untitled-ontology-5:Motor>
+        <untitled-ontology-5:NumeroAsientos rdf:datatype="http://www.w3.org/2001/XMLSchema#int">4</untitled-ontology-5:NumeroAsientos>
+        <untitled-ontology-5:Peso rdf:datatype="http://www.w3.org/2001/XMLSchema#double">250.0</untitled-ontology-5:Peso>
+        <untitled-ontology-5:Piloto rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-5:Piloto>
+        <untitled-ontology-5:Puertas rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</untitled-ontology-5:Puertas>
+        <untitled-ontology-5:RegistroVehic rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-5:RegistroVehic>
+        <untitled-ontology-5:SOAT rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-5:SOAT>
+        <untitled-ontology-5:Seguro rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-5:Seguro>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Avion -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Avion">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Avion"/>
+        <untitled-ontology-5:Color>Blanco</untitled-ontology-5:Color>
+        <untitled-ontology-5:Modelo>747</untitled-ontology-5:Modelo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Avion2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Avion2">
+        <untitled-ontology-5:CapAltura rdf:datatype="http://www.w3.org/2001/XMLSchema#double">12800.0</untitled-ontology-5:CapAltura>
+        <untitled-ontology-5:Capacidad rdf:datatype="http://www.w3.org/2001/XMLSchema#int">550</untitled-ontology-5:Capacidad>
+        <untitled-ontology-5:Color>Blanco</untitled-ontology-5:Color>
+        <untitled-ontology-5:Comercial></untitled-ontology-5:Comercial>
+        <untitled-ontology-5:Empresa></untitled-ontology-5:Empresa>
+        <untitled-ontology-5:EnUso></untitled-ontology-5:EnUso>
+        <untitled-ontology-5:EquipoSonido rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-5:EquipoSonido>
+        <untitled-ontology-5:Marca>Boeing</untitled-ontology-5:Marca>
+        <untitled-ontology-5:Modelo>Boeing 747</untitled-ontology-5:Modelo>
+        <untitled-ontology-5:Motor>JT-9D</untitled-ontology-5:Motor>
+        <untitled-ontology-5:NumeroAsientos rdf:datatype="http://www.w3.org/2001/XMLSchema#int">550</untitled-ontology-5:NumeroAsientos>
+        <untitled-ontology-5:Peso rdf:datatype="http://www.w3.org/2001/XMLSchema#double">162400.0</untitled-ontology-5:Peso>
+        <untitled-ontology-5:Seguro rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-5:Seguro>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Bicicleta -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Bicicleta">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Bicicleta"/>
+        <untitled-ontology-5:Capacidad rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</untitled-ontology-5:Capacidad>
+        <untitled-ontology-5:Color>Azul</untitled-ontology-5:Color>
+        <untitled-ontology-5:EnUso></untitled-ontology-5:EnUso>
+        <untitled-ontology-5:EquipoSonido rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-5:EquipoSonido>
+        <untitled-ontology-5:Kilometraje rdf:datatype="http://www.w3.org/2001/XMLSchema#int">0</untitled-ontology-5:Kilometraje>
+        <untitled-ontology-5:Luces rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-5:Luces>
+        <untitled-ontology-5:Marca>Giant</untitled-ontology-5:Marca>
+        <untitled-ontology-5:Material>Aluminio</untitled-ontology-5:Material>
+        <untitled-ontology-5:Matricula>None</untitled-ontology-5:Matricula>
+        <untitled-ontology-5:Modelo>BMX</untitled-ontology-5:Modelo>
+        <untitled-ontology-5:Motor>None</untitled-ontology-5:Motor>
+        <untitled-ontology-5:NroConductores rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</untitled-ontology-5:NroConductores>
+        <untitled-ontology-5:NroRuedas rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</untitled-ontology-5:NroRuedas>
+        <untitled-ontology-5:NumeroAsientos rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</untitled-ontology-5:NumeroAsientos>
+        <untitled-ontology-5:Peso rdf:datatype="http://www.w3.org/2001/XMLSchema#double">8.0</untitled-ontology-5:Peso>
+        <untitled-ontology-5:Seguro rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-5:Seguro>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Bote1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Bote1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Bote"/>
+        <untitled-ontology-5:Bueno></untitled-ontology-5:Bueno>
+        <untitled-ontology-5:Capacidad rdf:datatype="http://www.w3.org/2001/XMLSchema#int">4</untitled-ontology-5:Capacidad>
+        <untitled-ontology-5:Color>Blanco</untitled-ontology-5:Color>
+        <untitled-ontology-5:EquipoSeguridad rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-5:EquipoSeguridad>
+        <untitled-ontology-5:EquipoSonido rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-5:EquipoSonido>
+        <untitled-ontology-5:Externa></untitled-ontology-5:Externa>
+        <untitled-ontology-5:Marca>Extreme Boats EU Ltd.</untitled-ontology-5:Marca>
+        <untitled-ontology-5:Modelo>Fueraborda 545 SC</untitled-ontology-5:Modelo>
+        <untitled-ontology-5:Motor>70-115 HP</untitled-ontology-5:Motor>
+        <untitled-ontology-5:Peso rdf:datatype="http://www.w3.org/2001/XMLSchema#double">850.0</untitled-ontology-5:Peso>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Bus -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Bus">
+        <untitled-ontology-5:Color>Plomo</untitled-ontology-5:Color>
+        <untitled-ontology-5:Modelo>Coaster</untitled-ontology-5:Modelo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Camion -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Camion">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Automovil"/>
+        <untitled-ontology-5:Gasolina></untitled-ontology-5:Gasolina>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#MotoDeAgua1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#MotoDeAgua1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#MotoDeAgua"/>
+        <untitled-ontology-5:B></untitled-ontology-5:B>
+        <untitled-ontology-5:Capacidad rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3</untitled-ontology-5:Capacidad>
+        <untitled-ontology-5:Color>Amarillo con naranja</untitled-ontology-5:Color>
+        <untitled-ontology-5:EquipoSonido rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-5:EquipoSonido>
+        <untitled-ontology-5:Interna></untitled-ontology-5:Interna>
+        <untitled-ontology-5:Marca>Yamaha</untitled-ontology-5:Marca>
+        <untitled-ontology-5:Modelo>ERX</untitled-ontology-5:Modelo>
+        <untitled-ontology-5:Motor>TR-1</untitled-ontology-5:Motor>
+        <untitled-ontology-5:Peso rdf:datatype="http://www.w3.org/2001/XMLSchema#double">245.0</untitled-ontology-5:Peso>
+        <untitled-ontology-5:Plotter rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-5:Plotter>
+        <untitled-ontology-5:Potencia rdf:datatype="http://www.w3.org/2001/XMLSchema#int">110</untitled-ontology-5:Potencia>
+        <untitled-ontology-5:Sentado></untitled-ontology-5:Sentado>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#SuzukiJimmy -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#SuzukiJimmy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Automovil"/>
+        <untitled-ontology-5:Capacidad rdf:datatype="http://www.w3.org/2001/XMLSchema#int">4</untitled-ontology-5:Capacidad>
+        <untitled-ontology-5:Marca>SuzukiJimmy</untitled-ontology-5:Marca>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#helicoptero1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#helicoptero1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Helicoptero"/>
+        <untitled-ontology-5:CapAltura rdf:datatype="http://www.w3.org/2001/XMLSchema#double">5698.0</untitled-ontology-5:CapAltura>
+        <untitled-ontology-5:Capacidad rdf:datatype="http://www.w3.org/2001/XMLSchema#int">6</untitled-ontology-5:Capacidad>
+        <untitled-ontology-5:Color>Blanco</untitled-ontology-5:Color>
+        <untitled-ontology-5:EnUso></untitled-ontology-5:EnUso>
+        <untitled-ontology-5:Externa></untitled-ontology-5:Externa>
+        <untitled-ontology-5:Marca>Bell HelicopterTextron</untitled-ontology-5:Marca>
+        <untitled-ontology-5:Modelo>Bell 407</untitled-ontology-5:Modelo>
+        <untitled-ontology-5:Motor>1X813HP</untitled-ontology-5:Motor>
+        <untitled-ontology-5:NroHelices rdf:datatype="http://www.w3.org/2001/XMLSchema#int">4</untitled-ontology-5:NroHelices>
+        <untitled-ontology-5:NumeroAsientos rdf:datatype="http://www.w3.org/2001/XMLSchema#int">6</untitled-ontology-5:NumeroAsientos>
+        <untitled-ontology-5:Peso rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1210.0</untitled-ontology-5:Peso>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#moto1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#moto1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Motocicleta"/>
+        <untitled-ontology-5:Capacidad rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</untitled-ontology-5:Capacidad>
+        <untitled-ontology-5:Color>rojo</untitled-ontology-5:Color>
+        <untitled-ontology-5:EquipoSonido rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-5:EquipoSonido>
+        <untitled-ontology-5:Gasolina></untitled-ontology-5:Gasolina>
+        <untitled-ontology-5:Kilometraje rdf:datatype="http://www.w3.org/2001/XMLSchema#int">0</untitled-ontology-5:Kilometraje>
+        <untitled-ontology-5:Marca>Honda</untitled-ontology-5:Marca>
+        <untitled-ontology-5:Matricula>None</untitled-ontology-5:Matricula>
+        <untitled-ontology-5:Modelo>GC10</untitled-ontology-5:Modelo>
+        <untitled-ontology-5:Motor>4 tiempos</untitled-ontology-5:Motor>
+        <untitled-ontology-5:Peso rdf:datatype="http://www.w3.org/2001/XMLSchema#double">106.0</untitled-ontology-5:Peso>
+        <untitled-ontology-5:Seguro rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-5:Seguro>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#tren_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#tren_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Tren"/>
+        <untitled-ontology-5:Capacidad rdf:datatype="http://www.w3.org/2001/XMLSchema#int">126</untitled-ontology-5:Capacidad>
+        <untitled-ontology-5:Color>plomo</untitled-ontology-5:Color>
+        <untitled-ontology-5:Diesel></untitled-ontology-5:Diesel>
+        <untitled-ontology-5:EquipoSonido rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-5:EquipoSonido>
+        <untitled-ontology-5:Nacional>Chapare</untitled-ontology-5:Nacional>
+        <untitled-ontology-5:NroVagones rdf:datatype="http://www.w3.org/2001/XMLSchema#int">4</untitled-ontology-5:NroVagones>
+        <untitled-ontology-5:Peso rdf:datatype="http://www.w3.org/2001/XMLSchema#double">155000.0</untitled-ontology-5:Peso>
+        <untitled-ontology-5:Seguro rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-5:Seguro>
+        <untitled-ontology-5:Tickets rdf:datatype="http://www.w3.org/2001/XMLSchema#int">50</untitled-ontology-5:Tickets>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Automovil"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Avion"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Avion2"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Bicicleta"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#Bote1"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#MotoDeAgua1"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#helicoptero1"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#moto1"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#tren_1"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
