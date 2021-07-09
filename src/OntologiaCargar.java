@@ -6,11 +6,12 @@ public class OntologiaCargar {
 		String varBuscada; 
 		System.out.print("Ingrese su busqueda: "); 
 		varBuscada= entrada.nextLine();
-		String ruta=" <http://www.semanticweb.org/usuario/ontologies/2021/3/untitled-ontology-5#>";
+		String ruta="<http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#>";
 	    ReadOntology rd=new ReadOntology();
-	    rd.cargar("vehi.owl");
+	   // rd.cargar("food.owl");
+	    rd.cargar("task.owl");
 	    rd.consulta(ruta,varBuscada);
-	
+	   // rd.recorrer();
 	}
      
 }

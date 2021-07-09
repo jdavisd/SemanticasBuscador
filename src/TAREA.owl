@@ -1,0 +1,1750 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/user/ontologies/2021/3/Alimentos"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/user/ontologies/2021/3/Alimentos">
+    <Prefix name="" IRI="http://www.semanticweb.org/user/ontologies/2021/3/Alimentos"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Alimentos"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cereal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Dieta"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Fruta"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Jugo"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Lacteo"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Organico"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Suplemento"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Verdura"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#compuesta_de"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#es_de_tipo"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#calorias"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#carbohidratos"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#descripcion"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#fibra"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#grasas"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#inorganico"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#minerales"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#nombre"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#proteinas"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#sabor"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#suplementoDeportivo"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#tiempo"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#tipo"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#transgenico"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#vitaminas"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Brócoli"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Cebolla"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Cereal_de_Avena"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Cereal_de_cebada"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Cereal_de_centeno"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Cereal_de_espelta"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Cereal_de_grano"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Cereal_de_kamut"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Cereal_de_trigo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Espinaca"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Guisantes"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Helado_De_leche"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Helado_de_crema"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Jengibre"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Jugo_de_Manzana"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Jugo_de_Naranja"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Jugo_de_Piña"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Jugo_de_Plátano"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Jugo_de_Zanahoria"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Jugo_de_apio"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Jugo_verde"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Leche_deslactosada"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Leche_pasteurizada"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Manzana"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Naranja"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Piña"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Remolacha"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Sandia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Tomate"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Yogurt_batido"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Yogurt_frutado"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Yogurt_natural"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Zanahoria"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Alimentos"/>
+        <Class IRI="#Dieta"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cereal"/>
+        <Class IRI="#Organico"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Fruta"/>
+        <Class IRI="#Organico"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Jugo"/>
+        <Class IRI="#Organico"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Lacteo"/>
+        <Class IRI="#Organico"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Organico"/>
+        <Class IRI="#Alimentos"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Suplemento"/>
+        <Class IRI="#Alimentos"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Verdura"/>
+        <Class IRI="#Organico"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#Organico"/>
+        <Class IRI="#Suplemento"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#Verdura"/>
+        <NamedIndividual IRI="#Brócoli"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Verdura"/>
+        <NamedIndividual IRI="#Cebolla"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Cereal"/>
+        <NamedIndividual IRI="#Cereal_de_Avena"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Cereal"/>
+        <NamedIndividual IRI="#Cereal_de_cebada"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Cereal"/>
+        <NamedIndividual IRI="#Cereal_de_centeno"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Cereal"/>
+        <NamedIndividual IRI="#Cereal_de_espelta"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Cereal"/>
+        <NamedIndividual IRI="#Cereal_de_grano"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Cereal"/>
+        <NamedIndividual IRI="#Cereal_de_kamut"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Cereal"/>
+        <NamedIndividual IRI="#Cereal_de_trigo"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Verdura"/>
+        <NamedIndividual IRI="#Espinaca"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Verdura"/>
+        <NamedIndividual IRI="#Guisantes"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Lacteo"/>
+        <NamedIndividual IRI="#Helado_De_leche"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Lacteo"/>
+        <NamedIndividual IRI="#Helado_de_crema"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Verdura"/>
+        <NamedIndividual IRI="#Jengibre"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Jugo"/>
+        <NamedIndividual IRI="#Jugo_de_Manzana"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Jugo"/>
+        <NamedIndividual IRI="#Jugo_de_Naranja"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Jugo"/>
+        <NamedIndividual IRI="#Jugo_de_Piña"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Jugo"/>
+        <NamedIndividual IRI="#Jugo_de_Plátano"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Jugo"/>
+        <NamedIndividual IRI="#Jugo_de_Zanahoria"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Jugo"/>
+        <NamedIndividual IRI="#Jugo_de_apio"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Jugo"/>
+        <NamedIndividual IRI="#Jugo_verde"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Lacteo"/>
+        <NamedIndividual IRI="#Leche_deslactosada"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Lacteo"/>
+        <NamedIndividual IRI="#Leche_pasteurizada"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Fruta"/>
+        <NamedIndividual IRI="#Manzana"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Fruta"/>
+        <NamedIndividual IRI="#Naranja"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Fruta"/>
+        <NamedIndividual IRI="#Piña"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Verdura"/>
+        <NamedIndividual IRI="#Remolacha"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Fruta"/>
+        <NamedIndividual IRI="#Sandia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Verdura"/>
+        <NamedIndividual IRI="#Tomate"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Lacteo"/>
+        <NamedIndividual IRI="#Yogurt_batido"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Lacteo"/>
+        <NamedIndividual IRI="#Yogurt_frutado"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Lacteo"/>
+        <NamedIndividual IRI="#Yogurt_natural"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Verdura"/>
+        <NamedIndividual IRI="#Zanahoria"/>
+    </ClassAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#carbohidratos"/>
+        <NamedIndividual IRI="#Brócoli"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">2.4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fibra"/>
+        <NamedIndividual IRI="#Brócoli"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">3.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#grasas"/>
+        <NamedIndividual IRI="#Brócoli"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombre"/>
+        <NamedIndividual IRI="#Brócoli"/>
+        <Literal>brocoli</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#proteinas"/>
+        <NamedIndividual IRI="#Brócoli"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">3.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#transgenico"/>
+        <NamedIndividual IRI="#Brócoli"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#vitaminas"/>
+        <NamedIndividual IRI="#Brócoli"/>
+        <Literal>C, B, A</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#calorias"/>
+        <NamedIndividual IRI="#Cebolla"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">38.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#carbohidratos"/>
+        <NamedIndividual IRI="#Cebolla"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">8.6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fibra"/>
+        <NamedIndividual IRI="#Cebolla"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">1.6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#grasas"/>
+        <NamedIndividual IRI="#Cebolla"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.25</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombre"/>
+        <NamedIndividual IRI="#Cebolla"/>
+        <Literal>cebolla</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#proteinas"/>
+        <NamedIndividual IRI="#Cebolla"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">1.2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fibra"/>
+        <NamedIndividual IRI="#Cereal_de_Avena"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">6.7</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#minerales"/>
+        <NamedIndividual IRI="#Cereal_de_Avena"/>
+        <Literal>Hierro
+Magnesio
+Zinc
+Manganeso</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombre"/>
+        <NamedIndividual IRI="#Cereal_de_Avena"/>
+        <Literal>cereal_de_avena</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#proteinas"/>
+        <NamedIndividual IRI="#Cereal_de_Avena"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">13.8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#transgenico"/>
+        <NamedIndividual IRI="#Cereal_de_Avena"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#vitaminas"/>
+        <NamedIndividual IRI="#Cereal_de_Avena"/>
+        <Literal>B1, B9, B6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#calorias"/>
+        <NamedIndividual IRI="#Cereal_de_cebada"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">323.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#carbohidratos"/>
+        <NamedIndividual IRI="#Cereal_de_cebada"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">64.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fibra"/>
+        <NamedIndividual IRI="#Cereal_de_cebada"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">14.8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#grasas"/>
+        <NamedIndividual IRI="#Cereal_de_cebada"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">2.1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#minerales"/>
+        <NamedIndividual IRI="#Cereal_de_cebada"/>
+        <Literal>Sodio, Calcio, Hierro, Magnesio, Fosforo, Potasio</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombre"/>
+        <NamedIndividual IRI="#Cereal_de_cebada"/>
+        <Literal>cereal_de_cebada</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#proteinas"/>
+        <NamedIndividual IRI="#Cereal_de_cebada"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">10.6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#transgenico"/>
+        <NamedIndividual IRI="#Cereal_de_cebada"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#vitaminas"/>
+        <NamedIndividual IRI="#Cereal_de_cebada"/>
+        <Literal>A, B1, B2 , B3, B12, C</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#calorias"/>
+        <NamedIndividual IRI="#Cereal_de_centeno"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">408.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#carbohidratos"/>
+        <NamedIndividual IRI="#Cereal_de_centeno"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">79.8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fibra"/>
+        <NamedIndividual IRI="#Cereal_de_centeno"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">13.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#grasas"/>
+        <NamedIndividual IRI="#Cereal_de_centeno"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">2.5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#minerales"/>
+        <NamedIndividual IRI="#Cereal_de_centeno"/>
+        <Literal>Hierro, Fosforo, Mangnesio, Calcio, Potasio, Sodio</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombre"/>
+        <NamedIndividual IRI="#Cereal_de_centeno"/>
+        <Literal>cereal_de_centeno</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#proteinas"/>
+        <NamedIndividual IRI="#Cereal_de_centeno"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">14.8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#transgenico"/>
+        <NamedIndividual IRI="#Cereal_de_centeno"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#vitaminas"/>
+        <NamedIndividual IRI="#Cereal_de_centeno"/>
+        <Literal>B1, B6, E, B2, B3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#calorias"/>
+        <NamedIndividual IRI="#Cereal_de_espelta"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">338.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#carbohidratos"/>
+        <NamedIndividual IRI="#Cereal_de_espelta"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">70.2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fibra"/>
+        <NamedIndividual IRI="#Cereal_de_espelta"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">10.7</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#grasas"/>
+        <NamedIndividual IRI="#Cereal_de_espelta"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">2.43</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#minerales"/>
+        <NamedIndividual IRI="#Cereal_de_espelta"/>
+        <Literal>Calcio, Hierro, Potasio, Fosforo, Sodio, Zinc, Manganeso, Celenio</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombre"/>
+        <NamedIndividual IRI="#Cereal_de_espelta"/>
+        <Literal>cereal_de_espelta</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#proteinas"/>
+        <NamedIndividual IRI="#Cereal_de_espelta"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">14.57</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#transgenico"/>
+        <NamedIndividual IRI="#Cereal_de_espelta"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#vitaminas"/>
+        <NamedIndividual IRI="#Cereal_de_espelta"/>
+        <Literal>A, K, B3, B5, B9</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#carbohidratos"/>
+        <NamedIndividual IRI="#Cereal_de_grano"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">45.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fibra"/>
+        <NamedIndividual IRI="#Cereal_de_grano"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">6.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#minerales"/>
+        <NamedIndividual IRI="#Cereal_de_grano"/>
+        <Literal>Magnesio</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombre"/>
+        <NamedIndividual IRI="#Cereal_de_grano"/>
+        <Literal>Cereal_de_grano</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#proteinas"/>
+        <NamedIndividual IRI="#Cereal_de_grano"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">8.5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#vitaminas"/>
+        <NamedIndividual IRI="#Cereal_de_grano"/>
+        <Literal>B9, B12</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#calorias"/>
+        <NamedIndividual IRI="#Cereal_de_kamut"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">337.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#carbohidratos"/>
+        <NamedIndividual IRI="#Cereal_de_kamut"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">70.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fibra"/>
+        <NamedIndividual IRI="#Cereal_de_kamut"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">11.1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#grasas"/>
+        <NamedIndividual IRI="#Cereal_de_kamut"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">2.13</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#minerales"/>
+        <NamedIndividual IRI="#Cereal_de_kamut"/>
+        <Literal>Calcio, Hierro, Potasio, Magnesio, Fosforo, Sodio, Zinc, Manganesio, Celenio</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombre"/>
+        <NamedIndividual IRI="#Cereal_de_kamut"/>
+        <Literal>cereal_de_kamut</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#proteinas"/>
+        <NamedIndividual IRI="#Cereal_de_kamut"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">14.54</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#vitaminas"/>
+        <NamedIndividual IRI="#Cereal_de_kamut"/>
+        <Literal>A, K, B3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#calorias"/>
+        <NamedIndividual IRI="#Cereal_de_trigo"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">352.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#carbohidratos"/>
+        <NamedIndividual IRI="#Cereal_de_trigo"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">83.8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fibra"/>
+        <NamedIndividual IRI="#Cereal_de_trigo"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">9.6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#minerales"/>
+        <NamedIndividual IRI="#Cereal_de_trigo"/>
+        <Literal>Fosforo, Potasio, Magnesio, Calcio, Hierro</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombre"/>
+        <NamedIndividual IRI="#Cereal_de_trigo"/>
+        <Literal>cereal_de_trigo</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#proteinas"/>
+        <NamedIndividual IRI="#Cereal_de_trigo"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">7.8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#sabor"/>
+        <NamedIndividual IRI="#Cereal_de_trigo"/>
+        <Literal>Neutro, Dulce</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#vitaminas"/>
+        <NamedIndividual IRI="#Cereal_de_trigo"/>
+        <Literal>B, B1, B2, B5, B6, B9, B12</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#calorias"/>
+        <NamedIndividual IRI="#Espinaca"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">31.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#carbohidratos"/>
+        <NamedIndividual IRI="#Espinaca"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">3.63</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fibra"/>
+        <NamedIndividual IRI="#Espinaca"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">6.3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#minerales"/>
+        <NamedIndividual IRI="#Espinaca"/>
+        <Literal>Manganeso, Magnesio, Hierro</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombre"/>
+        <NamedIndividual IRI="#Espinaca"/>
+        <Literal>espinaca</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#proteinas"/>
+        <NamedIndividual IRI="#Espinaca"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">2.86</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#sabor"/>
+        <NamedIndividual IRI="#Espinaca"/>
+        <Literal>Ligeramente Acido</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#vitaminas"/>
+        <NamedIndividual IRI="#Espinaca"/>
+        <Literal>K, A, C, B2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#calorias"/>
+        <NamedIndividual IRI="#Guisantes"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">81.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#carbohidratos"/>
+        <NamedIndividual IRI="#Guisantes"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">14.5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fibra"/>
+        <NamedIndividual IRI="#Guisantes"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">5.1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#minerales"/>
+        <NamedIndividual IRI="#Guisantes"/>
+        <Literal>Calcio, Fosforo, Hierro</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombre"/>
+        <NamedIndividual IRI="#Guisantes"/>
+        <Literal>guisantes</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#proteinas"/>
+        <NamedIndividual IRI="#Guisantes"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">5.42</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#sabor"/>
+        <NamedIndividual IRI="#Guisantes"/>
+        <Literal>Dulce</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#vitaminas"/>
+        <NamedIndividual IRI="#Guisantes"/>
+        <Literal>C, B, B2, B3, B9</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#calorias"/>
+        <NamedIndividual IRI="#Helado_De_leche"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">325.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#carbohidratos"/>
+        <NamedIndividual IRI="#Helado_De_leche"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">22.4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fibra"/>
+        <NamedIndividual IRI="#Helado_De_leche"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">1.2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#grasas"/>
+        <NamedIndividual IRI="#Helado_De_leche"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">19.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#minerales"/>
+        <NamedIndividual IRI="#Helado_De_leche"/>
+        <Literal>Sodio, Calcio, Fosforo, Potasio</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombre"/>
+        <NamedIndividual IRI="#Helado_De_leche"/>
+        <Literal>helado_de_leche</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#proteinas"/>
+        <NamedIndividual IRI="#Helado_De_leche"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">2.4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#transgenico"/>
+        <NamedIndividual IRI="#Helado_De_leche"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#vitaminas"/>
+        <NamedIndividual IRI="#Helado_De_leche"/>
+        <Literal>A, B, B2, B3, C</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#grasas"/>
+        <NamedIndividual IRI="#Helado_de_crema"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">8.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#minerales"/>
+        <NamedIndividual IRI="#Helado_de_crema"/>
+        <Literal>Calcio</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombre"/>
+        <NamedIndividual IRI="#Helado_de_crema"/>
+        <Literal>helado_de_crema</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#vitaminas"/>
+        <NamedIndividual IRI="#Helado_de_crema"/>
+        <Literal>A, B2, B6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#calorias"/>
+        <NamedIndividual IRI="#Jengibre"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">346.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#carbohidratos"/>
+        <NamedIndividual IRI="#Jengibre"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">70.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fibra"/>
+        <NamedIndividual IRI="#Jengibre"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">12.5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#minerales"/>
+        <NamedIndividual IRI="#Jengibre"/>
+        <Literal>Potasio, Hierro, Selenio</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombre"/>
+        <NamedIndividual IRI="#Jengibre"/>
+        <Literal>jengibre</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#proteinas"/>
+        <NamedIndividual IRI="#Jengibre"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.09</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#transgenico"/>
+        <NamedIndividual IRI="#Jengibre"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#vitaminas"/>
+        <NamedIndividual IRI="#Jengibre"/>
+        <Literal>C</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#calorias"/>
+        <NamedIndividual IRI="#Jugo_de_Manzana"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">117.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#carbohidratos"/>
+        <NamedIndividual IRI="#Jugo_de_Manzana"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">28.97</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fibra"/>
+        <NamedIndividual IRI="#Jugo_de_Manzana"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#minerales"/>
+        <NamedIndividual IRI="#Jugo_de_Manzana"/>
+        <Literal>Hierro, Calcio, Potasio, Yodo, Zinc</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombre"/>
+        <NamedIndividual IRI="#Jugo_de_Manzana"/>
+        <Literal>jugo_de_manzana</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#proteinas"/>
+        <NamedIndividual IRI="#Jugo_de_Manzana"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.15</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#sabor"/>
+        <NamedIndividual IRI="#Jugo_de_Manzana"/>
+        <Literal>Dulce</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#transgenico"/>
+        <NamedIndividual IRI="#Jugo_de_Manzana"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#vitaminas"/>
+        <NamedIndividual IRI="#Jugo_de_Manzana"/>
+        <Literal>B6, C, E</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#calorias"/>
+        <NamedIndividual IRI="#Jugo_de_Naranja"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">45.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#carbohidratos"/>
+        <NamedIndividual IRI="#Jugo_de_Naranja"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">10.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fibra"/>
+        <NamedIndividual IRI="#Jugo_de_Naranja"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#grasas"/>
+        <NamedIndividual IRI="#Jugo_de_Naranja"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#minerales"/>
+        <NamedIndividual IRI="#Jugo_de_Naranja"/>
+        <Literal>Calcio, Hierro, Magensio</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#minerales"/>
+        <NamedIndividual IRI="#Jugo_de_Naranja"/>
+        <Literal>Sodio, Potasio</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombre"/>
+        <NamedIndividual IRI="#Jugo_de_Naranja"/>
+        <Literal>jugo_de_naranja</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#proteinas"/>
+        <NamedIndividual IRI="#Jugo_de_Naranja"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.7</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#transgenico"/>
+        <NamedIndividual IRI="#Jugo_de_Naranja"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#vitaminas"/>
+        <NamedIndividual IRI="#Jugo_de_Naranja"/>
+        <Literal>A, B, B12, C</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#calorias"/>
+        <NamedIndividual IRI="#Jugo_de_Piña"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">46.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#grasas"/>
+        <NamedIndividual IRI="#Jugo_de_Piña"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#minerales"/>
+        <NamedIndividual IRI="#Jugo_de_Piña"/>
+        <Literal>Calcio, Hierro, Yodo</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombre"/>
+        <NamedIndividual IRI="#Jugo_de_Piña"/>
+        <Literal>jugo_de_pina</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#proteinas"/>
+        <NamedIndividual IRI="#Jugo_de_Piña"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#sabor"/>
+        <NamedIndividual IRI="#Jugo_de_Piña"/>
+        <Literal>Dulce, Acido</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#vitaminas"/>
+        <NamedIndividual IRI="#Jugo_de_Piña"/>
+        <Literal>A, C, D, E, B12</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#calorias"/>
+        <NamedIndividual IRI="#Jugo_de_Plátano"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">376.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#carbohidratos"/>
+        <NamedIndividual IRI="#Jugo_de_Plátano"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">57.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#grasas"/>
+        <NamedIndividual IRI="#Jugo_de_Plátano"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">12.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#minerales"/>
+        <NamedIndividual IRI="#Jugo_de_Plátano"/>
+        <Literal>Sodio, Potasio, Calcio</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombre"/>
+        <NamedIndividual IRI="#Jugo_de_Plátano"/>
+        <Literal>jugo_de_platano</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#proteinas"/>
+        <NamedIndividual IRI="#Jugo_de_Plátano"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">13.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#transgenico"/>
+        <NamedIndividual IRI="#Jugo_de_Plátano"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#vitaminas"/>
+        <NamedIndividual IRI="#Jugo_de_Plátano"/>
+        <Literal>A, C</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#calorias"/>
+        <NamedIndividual IRI="#Jugo_de_Zanahoria"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">24.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#carbohidratos"/>
+        <NamedIndividual IRI="#Jugo_de_Zanahoria"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">4.75</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fibra"/>
+        <NamedIndividual IRI="#Jugo_de_Zanahoria"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.62</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#grasas"/>
+        <NamedIndividual IRI="#Jugo_de_Zanahoria"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.15</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#minerales"/>
+        <NamedIndividual IRI="#Jugo_de_Zanahoria"/>
+        <Literal>Sodio, Calcio, Hierro, Fosforo, Potasio</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombre"/>
+        <NamedIndividual IRI="#Jugo_de_Zanahoria"/>
+        <Literal>jugo_de_zanahoria</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#proteinas"/>
+        <NamedIndividual IRI="#Jugo_de_Zanahoria"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.63</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#transgenico"/>
+        <NamedIndividual IRI="#Jugo_de_Zanahoria"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#vitaminas"/>
+        <NamedIndividual IRI="#Jugo_de_Zanahoria"/>
+        <Literal>A, B1, B2, B3, B12, C</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#calorias"/>
+        <NamedIndividual IRI="#Jugo_de_apio"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">94.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#carbohidratos"/>
+        <NamedIndividual IRI="#Jugo_de_apio"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">21.7</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fibra"/>
+        <NamedIndividual IRI="#Jugo_de_apio"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">1.7</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#minerales"/>
+        <NamedIndividual IRI="#Jugo_de_apio"/>
+        <Literal>Potasio, Calcio, Hierro, Magnesio, Fosforo</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombre"/>
+        <NamedIndividual IRI="#Jugo_de_apio"/>
+        <Literal>jugo_de_apio</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#proteinas"/>
+        <NamedIndividual IRI="#Jugo_de_apio"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">1.77</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#transgenico"/>
+        <NamedIndividual IRI="#Jugo_de_apio"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#vitaminas"/>
+        <NamedIndividual IRI="#Jugo_de_apio"/>
+        <Literal>A, K, B</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#calorias"/>
+        <NamedIndividual IRI="#Jugo_verde"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">502.73</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#carbohidratos"/>
+        <NamedIndividual IRI="#Jugo_verde"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">41.01</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fibra"/>
+        <NamedIndividual IRI="#Jugo_verde"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">9.54</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#grasas"/>
+        <NamedIndividual IRI="#Jugo_verde"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">28.82</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#minerales"/>
+        <NamedIndividual IRI="#Jugo_verde"/>
+        <Literal>Sodio, Calcio, Hierro, Magnesio, Fosforo, Potasio</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombre"/>
+        <NamedIndividual IRI="#Jugo_verde"/>
+        <Literal>jugo_verde</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#proteinas"/>
+        <NamedIndividual IRI="#Jugo_verde"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">15.68</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#transgenico"/>
+        <NamedIndividual IRI="#Jugo_verde"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#vitaminas"/>
+        <NamedIndividual IRI="#Jugo_verde"/>
+        <Literal>A, B1, B2, B3, C</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#calorias"/>
+        <NamedIndividual IRI="#Leche_deslactosada"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">100.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#grasas"/>
+        <NamedIndividual IRI="#Leche_deslactosada"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">2.5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#minerales"/>
+        <NamedIndividual IRI="#Leche_deslactosada"/>
+        <Literal>Calcio, Fosforo</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombre"/>
+        <NamedIndividual IRI="#Leche_deslactosada"/>
+        <Literal>leche_deslactosada</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#vitaminas"/>
+        <NamedIndividual IRI="#Leche_deslactosada"/>
+        <Literal>C, B, A</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#calorias"/>
+        <NamedIndividual IRI="#Leche_pasteurizada"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">153.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#carbohidratos"/>
+        <NamedIndividual IRI="#Leche_pasteurizada"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">12.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#grasas"/>
+        <NamedIndividual IRI="#Leche_pasteurizada"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">8.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#minerales"/>
+        <NamedIndividual IRI="#Leche_pasteurizada"/>
+        <Literal>Sodio</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombre"/>
+        <NamedIndividual IRI="#Leche_pasteurizada"/>
+        <Literal>leche_pasteurizada</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#transgenico"/>
+        <NamedIndividual IRI="#Leche_pasteurizada"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombre"/>
+        <NamedIndividual IRI="#Manzana"/>
+        <Literal>manzana</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#calorias"/>
+        <NamedIndividual IRI="#Naranja"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">47.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#carbohidratos"/>
+        <NamedIndividual IRI="#Naranja"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">12.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fibra"/>
+        <NamedIndividual IRI="#Naranja"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">10.6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#minerales"/>
+        <NamedIndividual IRI="#Naranja"/>
+        <Literal>Potasio, Magensio, Fosforo, Calcio</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombre"/>
+        <NamedIndividual IRI="#Naranja"/>
+        <Literal>naranja</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#proteinas"/>
+        <NamedIndividual IRI="#Naranja"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">1.5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#sabor"/>
+        <NamedIndividual IRI="#Naranja"/>
+        <Literal>Agridulce</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#transgenico"/>
+        <NamedIndividual IRI="#Naranja"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#vitaminas"/>
+        <NamedIndividual IRI="#Naranja"/>
+        <Literal>A, C, B1, B5, B6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#calorias"/>
+        <NamedIndividual IRI="#Piña"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">48.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#carbohidratos"/>
+        <NamedIndividual IRI="#Piña"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">12.63</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fibra"/>
+        <NamedIndividual IRI="#Piña"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">1.4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#minerales"/>
+        <NamedIndividual IRI="#Piña"/>
+        <Literal>Potasio, Hierro, Calcio</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombre"/>
+        <NamedIndividual IRI="#Piña"/>
+        <Literal>pina</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#proteinas"/>
+        <NamedIndividual IRI="#Piña"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.54</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#sabor"/>
+        <NamedIndividual IRI="#Piña"/>
+        <Literal>Agridulce</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#transgenico"/>
+        <NamedIndividual IRI="#Piña"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#vitaminas"/>
+        <NamedIndividual IRI="#Piña"/>
+        <Literal>A, C, B1, B6, B9, E</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#calorias"/>
+        <NamedIndividual IRI="#Remolacha"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">43.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#carbohidratos"/>
+        <NamedIndividual IRI="#Remolacha"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">9.56</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fibra"/>
+        <NamedIndividual IRI="#Remolacha"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">2.8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#minerales"/>
+        <NamedIndividual IRI="#Remolacha"/>
+        <Literal>Potasio, Calcio, Hierro, Fosforo, Sodio</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombre"/>
+        <NamedIndividual IRI="#Remolacha"/>
+        <Literal>remolacha</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#proteinas"/>
+        <NamedIndividual IRI="#Remolacha"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">1.61</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#sabor"/>
+        <NamedIndividual IRI="#Remolacha"/>
+        <Literal>Dulce</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#transgenico"/>
+        <NamedIndividual IRI="#Remolacha"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#vitaminas"/>
+        <NamedIndividual IRI="#Remolacha"/>
+        <Literal>A, C, B6, B9</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#calorias"/>
+        <NamedIndividual IRI="#Sandia"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">30.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#carbohidratos"/>
+        <NamedIndividual IRI="#Sandia"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">8.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fibra"/>
+        <NamedIndividual IRI="#Sandia"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#grasas"/>
+        <NamedIndividual IRI="#Sandia"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#minerales"/>
+        <NamedIndividual IRI="#Sandia"/>
+        <Literal>Potasio</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombre"/>
+        <NamedIndividual IRI="#Sandia"/>
+        <Literal>sandia</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#transgenico"/>
+        <NamedIndividual IRI="#Sandia"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#vitaminas"/>
+        <NamedIndividual IRI="#Sandia"/>
+        <Literal>A, B, C</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#calorias"/>
+        <NamedIndividual IRI="#Tomate"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">18.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#carbohidratos"/>
+        <NamedIndividual IRI="#Tomate"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">3.89</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fibra"/>
+        <NamedIndividual IRI="#Tomate"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">1.2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#grasas"/>
+        <NamedIndividual IRI="#Tomate"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#minerales"/>
+        <NamedIndividual IRI="#Tomate"/>
+        <Literal>Calcio, Fosforo, Potasio, Sodio</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombre"/>
+        <NamedIndividual IRI="#Tomate"/>
+        <Literal>tomate</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#transgenico"/>
+        <NamedIndividual IRI="#Tomate"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#vitaminas"/>
+        <NamedIndividual IRI="#Tomate"/>
+        <Literal>A, B1, B2, C</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#calorias"/>
+        <NamedIndividual IRI="#Yogurt_batido"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">97.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#carbohidratos"/>
+        <NamedIndividual IRI="#Yogurt_batido"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">15.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#grasas"/>
+        <NamedIndividual IRI="#Yogurt_batido"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">2.8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#minerales"/>
+        <NamedIndividual IRI="#Yogurt_batido"/>
+        <Literal>Magensio, Fosforo, Calcio</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombre"/>
+        <NamedIndividual IRI="#Yogurt_batido"/>
+        <Literal>yogurt_batido</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#proteinas"/>
+        <NamedIndividual IRI="#Yogurt_batido"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">8.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#sabor"/>
+        <NamedIndividual IRI="#Yogurt_batido"/>
+        <Literal>Frutilla, Durazno, Coco</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#transgenico"/>
+        <NamedIndividual IRI="#Yogurt_batido"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#vitaminas"/>
+        <NamedIndividual IRI="#Yogurt_batido"/>
+        <Literal>B7, A, B3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#calorias"/>
+        <NamedIndividual IRI="#Yogurt_frutado"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">95.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#carbohidratos"/>
+        <NamedIndividual IRI="#Yogurt_frutado"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">14.3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#grasas"/>
+        <NamedIndividual IRI="#Yogurt_frutado"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">2.3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombre"/>
+        <NamedIndividual IRI="#Yogurt_frutado"/>
+        <Literal>yogurt_frutado</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#proteinas"/>
+        <NamedIndividual IRI="#Yogurt_frutado"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">3.8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#transgenico"/>
+        <NamedIndividual IRI="#Yogurt_frutado"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#vitaminas"/>
+        <NamedIndividual IRI="#Yogurt_frutado"/>
+        <Literal>B7, B9, A, B3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#calorias"/>
+        <NamedIndividual IRI="#Yogurt_natural"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">63.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#carbohidratos"/>
+        <NamedIndividual IRI="#Yogurt_natural"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">12.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#grasas"/>
+        <NamedIndividual IRI="#Yogurt_natural"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">2.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#minerales"/>
+        <NamedIndividual IRI="#Yogurt_natural"/>
+        <Literal>Calcio, Fosforo, Magnesio, Zinc</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombre"/>
+        <NamedIndividual IRI="#Yogurt_natural"/>
+        <Literal>yogurt_natural</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#transgenico"/>
+        <NamedIndividual IRI="#Yogurt_natural"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#vitaminas"/>
+        <NamedIndividual IRI="#Yogurt_natural"/>
+        <Literal>B, A</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#calorias"/>
+        <NamedIndividual IRI="#Zanahoria"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">41.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#carbohidratos"/>
+        <NamedIndividual IRI="#Zanahoria"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">4.3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fibra"/>
+        <NamedIndividual IRI="#Zanahoria"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">1.8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#minerales"/>
+        <NamedIndividual IRI="#Zanahoria"/>
+        <Literal>Potasio, Fosforo, Magnesio, Yodo, Calcio</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombre"/>
+        <NamedIndividual IRI="#Zanahoria"/>
+        <Literal>zanahoria</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#transgenico"/>
+        <NamedIndividual IRI="#Zanahoria"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#vitaminas"/>
+        <NamedIndividual IRI="#Zanahoria"/>
+        <Literal>A, B3, E, K</Literal>
+    </DataPropertyAssertion>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#compuesta_de"/>
+        <Class IRI="#Alimentos"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#es_de_tipo"/>
+        <Class IRI="#Alimentos"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#compuesta_de"/>
+        <Class IRI="#Organico"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="#calorias"/>
+        <Class IRI="#Alimentos"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#carbohidratos"/>
+        <Class IRI="#Alimentos"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#descripcion"/>
+        <Class IRI="#Alimentos"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#fibra"/>
+        <Class IRI="#Alimentos"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#grasas"/>
+        <Class IRI="#Alimentos"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#inorganico"/>
+        <Class IRI="#Alimentos"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#minerales"/>
+        <Class IRI="#Alimentos"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#nombre"/>
+        <Class IRI="#Alimentos"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#proteinas"/>
+        <Class IRI="#Alimentos"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#sabor"/>
+        <Class IRI="#Alimentos"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#suplementoDeportivo"/>
+        <Class IRI="#Suplemento"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#tiempo"/>
+        <Class IRI="#Dieta"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#tipo"/>
+        <Class IRI="#Alimentos"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#transgenico"/>
+        <Class IRI="#Organico"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#vitaminas"/>
+        <Class IRI="#Organico"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#calorias"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#carbohidratos"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#descripcion"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#fibra"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#grasas"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#inorganico"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#minerales"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#nombre"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#proteinas"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#sabor"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#suplementoDeportivo"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#tiempo"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#tipo"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#transgenico"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#vitaminas"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

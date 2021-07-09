@@ -1,0 +1,800 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/user/ontologies/2021/3/Alimentos"
+     xml:base="http://www.semanticweb.org/user/ontologies/2021/3/Alimentos"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:Alimentos="http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/user/ontologies/2021/3/Alimentos"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#compuesta_de -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#compuesta_de">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#Alimentos"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#Organico"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#es_de_tipo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#es_de_tipo">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#Alimentos"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#calorias -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#calorias">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#Alimentos"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#carbohidratos -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#carbohidratos">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#Alimentos"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#descripcion -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#descripcion">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#Alimentos"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#fibra -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#fibra">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#Alimentos"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#grasas -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#grasas">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#Alimentos"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#inorganico -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#inorganico">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#Alimentos"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#minerales -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#minerales">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#Alimentos"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#nombre -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#nombre">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#Alimentos"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#proteinas -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#proteinas">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#Alimentos"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#sabor -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#sabor">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#Alimentos"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#suplementoDeportivo -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#suplementoDeportivo">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#Suplemento"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#tiempo -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#tiempo">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#Dieta"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#tipo -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#tipo">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#Alimentos"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#transgenico -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#transgenico">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#Organico"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#vitaminas -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#vitaminas">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#Organico"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#Alimentos -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#Alimentos">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#Dieta"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#Cereal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#Cereal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#Organico"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#Dieta -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#Dieta"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#Fruta -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#Fruta">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#Organico"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#Jugo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#Jugo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#Organico"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#Lacteo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#Lacteo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#Organico"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#Organico -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#Organico">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#Alimentos"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#Suplemento"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#Suplemento -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#Suplemento">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#Alimentos"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#Verdura -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#Verdura">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#Organico"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#Brócoli -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#Brócoli">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#Verdura"/>
+        <Alimentos:carbohidratos rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2.4</Alimentos:carbohidratos>
+        <Alimentos:fibra rdf:datatype="http://www.w3.org/2001/XMLSchema#float">3.0</Alimentos:fibra>
+        <Alimentos:grasas rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.4</Alimentos:grasas>
+        <Alimentos:nombre>brocoli</Alimentos:nombre>
+        <Alimentos:proteinas rdf:datatype="http://www.w3.org/2001/XMLSchema#float">3.0</Alimentos:proteinas>
+        <Alimentos:transgenico rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</Alimentos:transgenico>
+        <Alimentos:vitaminas>C, B, A</Alimentos:vitaminas>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#Cebolla -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#Cebolla">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#Verdura"/>
+        <Alimentos:calorias rdf:datatype="http://www.w3.org/2001/XMLSchema#float">38.0</Alimentos:calorias>
+        <Alimentos:carbohidratos rdf:datatype="http://www.w3.org/2001/XMLSchema#float">8.6</Alimentos:carbohidratos>
+        <Alimentos:fibra rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.6</Alimentos:fibra>
+        <Alimentos:grasas rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.25</Alimentos:grasas>
+        <Alimentos:nombre>cebolla</Alimentos:nombre>
+        <Alimentos:proteinas rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.2</Alimentos:proteinas>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#Cereal_de_Avena -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#Cereal_de_Avena">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#Cereal"/>
+        <Alimentos:fibra rdf:datatype="http://www.w3.org/2001/XMLSchema#float">6.7</Alimentos:fibra>
+        <Alimentos:minerales>Hierro
+Magnesio
+Zinc
+Manganeso</Alimentos:minerales>
+        <Alimentos:nombre>cereal_de_avena</Alimentos:nombre>
+        <Alimentos:proteinas rdf:datatype="http://www.w3.org/2001/XMLSchema#float">13.8</Alimentos:proteinas>
+        <Alimentos:transgenico rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</Alimentos:transgenico>
+        <Alimentos:vitaminas>B1, B9, B6</Alimentos:vitaminas>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#Cereal_de_cebada -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#Cereal_de_cebada">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#Cereal"/>
+        <Alimentos:calorias rdf:datatype="http://www.w3.org/2001/XMLSchema#float">323.0</Alimentos:calorias>
+        <Alimentos:carbohidratos rdf:datatype="http://www.w3.org/2001/XMLSchema#float">64.0</Alimentos:carbohidratos>
+        <Alimentos:fibra rdf:datatype="http://www.w3.org/2001/XMLSchema#float">14.8</Alimentos:fibra>
+        <Alimentos:grasas rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2.1</Alimentos:grasas>
+        <Alimentos:minerales>Sodio, Calcio, Hierro, Magnesio, Fosforo, Potasio</Alimentos:minerales>
+        <Alimentos:nombre>cereal_de_cebada</Alimentos:nombre>
+        <Alimentos:proteinas rdf:datatype="http://www.w3.org/2001/XMLSchema#float">10.6</Alimentos:proteinas>
+        <Alimentos:transgenico rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</Alimentos:transgenico>
+        <Alimentos:vitaminas>A, B1, B2 , B3, B12, C</Alimentos:vitaminas>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#Cereal_de_centeno -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#Cereal_de_centeno">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#Cereal"/>
+        <Alimentos:calorias rdf:datatype="http://www.w3.org/2001/XMLSchema#float">408.0</Alimentos:calorias>
+        <Alimentos:carbohidratos rdf:datatype="http://www.w3.org/2001/XMLSchema#float">79.8</Alimentos:carbohidratos>
+        <Alimentos:fibra rdf:datatype="http://www.w3.org/2001/XMLSchema#float">13.0</Alimentos:fibra>
+        <Alimentos:grasas rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2.5</Alimentos:grasas>
+        <Alimentos:minerales>Hierro, Fosforo, Mangnesio, Calcio, Potasio, Sodio</Alimentos:minerales>
+        <Alimentos:nombre>cereal_de_centeno</Alimentos:nombre>
+        <Alimentos:proteinas rdf:datatype="http://www.w3.org/2001/XMLSchema#float">14.8</Alimentos:proteinas>
+        <Alimentos:transgenico rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</Alimentos:transgenico>
+        <Alimentos:vitaminas>B1, B6, E, B2, B3</Alimentos:vitaminas>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#Cereal_de_espelta -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#Cereal_de_espelta">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#Cereal"/>
+        <Alimentos:calorias rdf:datatype="http://www.w3.org/2001/XMLSchema#float">338.0</Alimentos:calorias>
+        <Alimentos:carbohidratos rdf:datatype="http://www.w3.org/2001/XMLSchema#float">70.2</Alimentos:carbohidratos>
+        <Alimentos:fibra rdf:datatype="http://www.w3.org/2001/XMLSchema#float">10.7</Alimentos:fibra>
+        <Alimentos:grasas rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2.43</Alimentos:grasas>
+        <Alimentos:minerales>Calcio, Hierro, Potasio, Fosforo, Sodio, Zinc, Manganeso, Celenio</Alimentos:minerales>
+        <Alimentos:nombre>cereal_de_espelta</Alimentos:nombre>
+        <Alimentos:proteinas rdf:datatype="http://www.w3.org/2001/XMLSchema#float">14.57</Alimentos:proteinas>
+        <Alimentos:transgenico rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</Alimentos:transgenico>
+        <Alimentos:vitaminas>A, K, B3, B5, B9</Alimentos:vitaminas>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#Cereal_de_grano -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#Cereal_de_grano">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#Cereal"/>
+        <Alimentos:carbohidratos rdf:datatype="http://www.w3.org/2001/XMLSchema#float">45.0</Alimentos:carbohidratos>
+        <Alimentos:fibra rdf:datatype="http://www.w3.org/2001/XMLSchema#float">6.0</Alimentos:fibra>
+        <Alimentos:minerales>Magnesio</Alimentos:minerales>
+        <Alimentos:nombre>Cereal_de_grano</Alimentos:nombre>
+        <Alimentos:proteinas rdf:datatype="http://www.w3.org/2001/XMLSchema#float">8.5</Alimentos:proteinas>
+        <Alimentos:vitaminas>B9, B12</Alimentos:vitaminas>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#Cereal_de_kamut -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#Cereal_de_kamut">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#Cereal"/>
+        <Alimentos:calorias rdf:datatype="http://www.w3.org/2001/XMLSchema#float">337.0</Alimentos:calorias>
+        <Alimentos:carbohidratos rdf:datatype="http://www.w3.org/2001/XMLSchema#float">70.0</Alimentos:carbohidratos>
+        <Alimentos:fibra rdf:datatype="http://www.w3.org/2001/XMLSchema#float">11.1</Alimentos:fibra>
+        <Alimentos:grasas rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2.13</Alimentos:grasas>
+        <Alimentos:minerales>Calcio, Hierro, Potasio, Magnesio, Fosforo, Sodio, Zinc, Manganesio, Celenio</Alimentos:minerales>
+        <Alimentos:nombre>cereal_de_kamut</Alimentos:nombre>
+        <Alimentos:proteinas rdf:datatype="http://www.w3.org/2001/XMLSchema#float">14.54</Alimentos:proteinas>
+        <Alimentos:vitaminas>A, K, B3</Alimentos:vitaminas>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#Cereal_de_trigo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#Cereal_de_trigo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#Cereal"/>
+        <Alimentos:calorias rdf:datatype="http://www.w3.org/2001/XMLSchema#float">352.0</Alimentos:calorias>
+        <Alimentos:carbohidratos rdf:datatype="http://www.w3.org/2001/XMLSchema#float">83.8</Alimentos:carbohidratos>
+        <Alimentos:fibra rdf:datatype="http://www.w3.org/2001/XMLSchema#float">9.6</Alimentos:fibra>
+        <Alimentos:minerales>Fosforo, Potasio, Magnesio, Calcio, Hierro</Alimentos:minerales>
+        <Alimentos:nombre>cereal_de_trigo</Alimentos:nombre>
+        <Alimentos:proteinas rdf:datatype="http://www.w3.org/2001/XMLSchema#float">7.8</Alimentos:proteinas>
+        <Alimentos:sabor>Neutro, Dulce</Alimentos:sabor>
+        <Alimentos:vitaminas>B, B1, B2, B5, B6, B9, B12</Alimentos:vitaminas>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#Espinaca -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#Espinaca">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#Verdura"/>
+        <Alimentos:calorias rdf:datatype="http://www.w3.org/2001/XMLSchema#float">31.0</Alimentos:calorias>
+        <Alimentos:carbohidratos rdf:datatype="http://www.w3.org/2001/XMLSchema#float">3.63</Alimentos:carbohidratos>
+        <Alimentos:fibra rdf:datatype="http://www.w3.org/2001/XMLSchema#float">6.3</Alimentos:fibra>
+        <Alimentos:minerales>Manganeso, Magnesio, Hierro</Alimentos:minerales>
+        <Alimentos:nombre>espinaca</Alimentos:nombre>
+        <Alimentos:proteinas rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2.86</Alimentos:proteinas>
+        <Alimentos:sabor>Ligeramente Acido</Alimentos:sabor>
+        <Alimentos:vitaminas>K, A, C, B2</Alimentos:vitaminas>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#Guisantes -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#Guisantes">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#Verdura"/>
+        <Alimentos:calorias rdf:datatype="http://www.w3.org/2001/XMLSchema#float">81.0</Alimentos:calorias>
+        <Alimentos:carbohidratos rdf:datatype="http://www.w3.org/2001/XMLSchema#float">14.5</Alimentos:carbohidratos>
+        <Alimentos:fibra rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.1</Alimentos:fibra>
+        <Alimentos:minerales>Calcio, Fosforo, Hierro</Alimentos:minerales>
+        <Alimentos:nombre>guisantes</Alimentos:nombre>
+        <Alimentos:proteinas rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.42</Alimentos:proteinas>
+        <Alimentos:sabor>Dulce</Alimentos:sabor>
+        <Alimentos:vitaminas>C, B, B2, B3, B9</Alimentos:vitaminas>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#Helado_De_leche -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#Helado_De_leche">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#Lacteo"/>
+        <Alimentos:calorias rdf:datatype="http://www.w3.org/2001/XMLSchema#float">325.0</Alimentos:calorias>
+        <Alimentos:carbohidratos rdf:datatype="http://www.w3.org/2001/XMLSchema#float">22.4</Alimentos:carbohidratos>
+        <Alimentos:fibra rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.2</Alimentos:fibra>
+        <Alimentos:grasas rdf:datatype="http://www.w3.org/2001/XMLSchema#float">19.0</Alimentos:grasas>
+        <Alimentos:minerales>Sodio, Calcio, Fosforo, Potasio</Alimentos:minerales>
+        <Alimentos:nombre>helado_de_leche</Alimentos:nombre>
+        <Alimentos:proteinas rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2.4</Alimentos:proteinas>
+        <Alimentos:transgenico rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</Alimentos:transgenico>
+        <Alimentos:vitaminas>A, B, B2, B3, C</Alimentos:vitaminas>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#Helado_de_crema -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#Helado_de_crema">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#Lacteo"/>
+        <Alimentos:grasas rdf:datatype="http://www.w3.org/2001/XMLSchema#float">8.0</Alimentos:grasas>
+        <Alimentos:minerales>Calcio</Alimentos:minerales>
+        <Alimentos:nombre>helado_de_crema</Alimentos:nombre>
+        <Alimentos:vitaminas>A, B2, B6</Alimentos:vitaminas>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#Jengibre -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#Jengibre">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#Verdura"/>
+        <Alimentos:calorias rdf:datatype="http://www.w3.org/2001/XMLSchema#float">346.0</Alimentos:calorias>
+        <Alimentos:carbohidratos rdf:datatype="http://www.w3.org/2001/XMLSchema#float">70.0</Alimentos:carbohidratos>
+        <Alimentos:fibra rdf:datatype="http://www.w3.org/2001/XMLSchema#float">12.5</Alimentos:fibra>
+        <Alimentos:minerales>Potasio, Hierro, Selenio</Alimentos:minerales>
+        <Alimentos:nombre>jengibre</Alimentos:nombre>
+        <Alimentos:proteinas rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.09</Alimentos:proteinas>
+        <Alimentos:transgenico rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</Alimentos:transgenico>
+        <Alimentos:vitaminas>C</Alimentos:vitaminas>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#Jugo_de_Manzana -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#Jugo_de_Manzana">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#Jugo"/>
+        <Alimentos:calorias rdf:datatype="http://www.w3.org/2001/XMLSchema#float">117.0</Alimentos:calorias>
+        <Alimentos:carbohidratos rdf:datatype="http://www.w3.org/2001/XMLSchema#float">28.97</Alimentos:carbohidratos>
+        <Alimentos:fibra rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.2</Alimentos:fibra>
+        <Alimentos:minerales>Hierro, Calcio, Potasio, Yodo, Zinc</Alimentos:minerales>
+        <Alimentos:nombre>jugo_de_manzana</Alimentos:nombre>
+        <Alimentos:proteinas rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.15</Alimentos:proteinas>
+        <Alimentos:sabor>Dulce</Alimentos:sabor>
+        <Alimentos:transgenico rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</Alimentos:transgenico>
+        <Alimentos:vitaminas>B6, C, E</Alimentos:vitaminas>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#Jugo_de_Naranja -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#Jugo_de_Naranja">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#Jugo"/>
+        <Alimentos:calorias rdf:datatype="http://www.w3.org/2001/XMLSchema#float">45.0</Alimentos:calorias>
+        <Alimentos:carbohidratos rdf:datatype="http://www.w3.org/2001/XMLSchema#float">10.0</Alimentos:carbohidratos>
+        <Alimentos:fibra rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.2</Alimentos:fibra>
+        <Alimentos:grasas rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.2</Alimentos:grasas>
+        <Alimentos:minerales>Calcio, Hierro, Magensio</Alimentos:minerales>
+        <Alimentos:minerales>Sodio, Potasio</Alimentos:minerales>
+        <Alimentos:nombre>jugo_de_naranja</Alimentos:nombre>
+        <Alimentos:proteinas rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.7</Alimentos:proteinas>
+        <Alimentos:transgenico rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</Alimentos:transgenico>
+        <Alimentos:vitaminas>A, B, B12, C</Alimentos:vitaminas>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#Jugo_de_Piña -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#Jugo_de_Piña">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#Jugo"/>
+        <Alimentos:calorias rdf:datatype="http://www.w3.org/2001/XMLSchema#float">46.0</Alimentos:calorias>
+        <Alimentos:grasas rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.1</Alimentos:grasas>
+        <Alimentos:minerales>Calcio, Hierro, Yodo</Alimentos:minerales>
+        <Alimentos:nombre>jugo_de_pina</Alimentos:nombre>
+        <Alimentos:proteinas rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.4</Alimentos:proteinas>
+        <Alimentos:sabor>Dulce, Acido</Alimentos:sabor>
+        <Alimentos:vitaminas>A, C, D, E, B12</Alimentos:vitaminas>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#Jugo_de_Plátano -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#Jugo_de_Plátano">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#Jugo"/>
+        <Alimentos:calorias rdf:datatype="http://www.w3.org/2001/XMLSchema#float">376.0</Alimentos:calorias>
+        <Alimentos:carbohidratos rdf:datatype="http://www.w3.org/2001/XMLSchema#float">57.0</Alimentos:carbohidratos>
+        <Alimentos:grasas rdf:datatype="http://www.w3.org/2001/XMLSchema#float">12.0</Alimentos:grasas>
+        <Alimentos:minerales>Sodio, Potasio, Calcio</Alimentos:minerales>
+        <Alimentos:nombre>jugo_de_platano</Alimentos:nombre>
+        <Alimentos:proteinas rdf:datatype="http://www.w3.org/2001/XMLSchema#float">13.0</Alimentos:proteinas>
+        <Alimentos:transgenico rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</Alimentos:transgenico>
+        <Alimentos:vitaminas>A, C</Alimentos:vitaminas>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#Jugo_de_Zanahoria -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#Jugo_de_Zanahoria">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#Jugo"/>
+        <Alimentos:calorias rdf:datatype="http://www.w3.org/2001/XMLSchema#float">24.0</Alimentos:calorias>
+        <Alimentos:carbohidratos rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.75</Alimentos:carbohidratos>
+        <Alimentos:fibra rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.62</Alimentos:fibra>
+        <Alimentos:grasas rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.15</Alimentos:grasas>
+        <Alimentos:minerales>Sodio, Calcio, Hierro, Fosforo, Potasio</Alimentos:minerales>
+        <Alimentos:nombre>jugo_de_zanahoria</Alimentos:nombre>
+        <Alimentos:proteinas rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.63</Alimentos:proteinas>
+        <Alimentos:transgenico rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</Alimentos:transgenico>
+        <Alimentos:vitaminas>A, B1, B2, B3, B12, C</Alimentos:vitaminas>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#Jugo_de_apio -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#Jugo_de_apio">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#Jugo"/>
+        <Alimentos:calorias rdf:datatype="http://www.w3.org/2001/XMLSchema#float">94.0</Alimentos:calorias>
+        <Alimentos:carbohidratos rdf:datatype="http://www.w3.org/2001/XMLSchema#float">21.7</Alimentos:carbohidratos>
+        <Alimentos:fibra rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.7</Alimentos:fibra>
+        <Alimentos:minerales>Potasio, Calcio, Hierro, Magnesio, Fosforo</Alimentos:minerales>
+        <Alimentos:nombre>jugo_de_apio</Alimentos:nombre>
+        <Alimentos:proteinas rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.77</Alimentos:proteinas>
+        <Alimentos:transgenico rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</Alimentos:transgenico>
+        <Alimentos:vitaminas>A, K, B</Alimentos:vitaminas>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#Jugo_verde -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#Jugo_verde">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#Jugo"/>
+        <Alimentos:calorias rdf:datatype="http://www.w3.org/2001/XMLSchema#float">502.73</Alimentos:calorias>
+        <Alimentos:carbohidratos rdf:datatype="http://www.w3.org/2001/XMLSchema#float">41.01</Alimentos:carbohidratos>
+        <Alimentos:fibra rdf:datatype="http://www.w3.org/2001/XMLSchema#float">9.54</Alimentos:fibra>
+        <Alimentos:grasas rdf:datatype="http://www.w3.org/2001/XMLSchema#float">28.82</Alimentos:grasas>
+        <Alimentos:minerales>Sodio, Calcio, Hierro, Magnesio, Fosforo, Potasio</Alimentos:minerales>
+        <Alimentos:nombre>jugo_verde</Alimentos:nombre>
+        <Alimentos:proteinas rdf:datatype="http://www.w3.org/2001/XMLSchema#float">15.68</Alimentos:proteinas>
+        <Alimentos:transgenico rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</Alimentos:transgenico>
+        <Alimentos:vitaminas>A, B1, B2, B3, C</Alimentos:vitaminas>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#Leche_deslactosada -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#Leche_deslactosada">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#Lacteo"/>
+        <Alimentos:calorias rdf:datatype="http://www.w3.org/2001/XMLSchema#float">100.0</Alimentos:calorias>
+        <Alimentos:grasas rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2.5</Alimentos:grasas>
+        <Alimentos:minerales>Calcio, Fosforo</Alimentos:minerales>
+        <Alimentos:nombre>leche_deslactosada</Alimentos:nombre>
+        <Alimentos:vitaminas>C, B, A</Alimentos:vitaminas>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#Leche_pasteurizada -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#Leche_pasteurizada">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#Lacteo"/>
+        <Alimentos:calorias rdf:datatype="http://www.w3.org/2001/XMLSchema#float">153.0</Alimentos:calorias>
+        <Alimentos:carbohidratos rdf:datatype="http://www.w3.org/2001/XMLSchema#float">12.0</Alimentos:carbohidratos>
+        <Alimentos:grasas rdf:datatype="http://www.w3.org/2001/XMLSchema#float">8.0</Alimentos:grasas>
+        <Alimentos:minerales>Sodio</Alimentos:minerales>
+        <Alimentos:nombre>leche_pasteurizada</Alimentos:nombre>
+        <Alimentos:transgenico rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</Alimentos:transgenico>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#Manzana -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#Manzana">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#Fruta"/>
+        <Alimentos:nombre>manzana</Alimentos:nombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#Naranja -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#Naranja">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#Fruta"/>
+        <Alimentos:calorias rdf:datatype="http://www.w3.org/2001/XMLSchema#float">47.0</Alimentos:calorias>
+        <Alimentos:carbohidratos rdf:datatype="http://www.w3.org/2001/XMLSchema#float">12.0</Alimentos:carbohidratos>
+        <Alimentos:fibra rdf:datatype="http://www.w3.org/2001/XMLSchema#float">10.6</Alimentos:fibra>
+        <Alimentos:minerales>Potasio, Magensio, Fosforo, Calcio</Alimentos:minerales>
+        <Alimentos:nombre>naranja</Alimentos:nombre>
+        <Alimentos:proteinas rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.5</Alimentos:proteinas>
+        <Alimentos:sabor>Agridulce</Alimentos:sabor>
+        <Alimentos:transgenico rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</Alimentos:transgenico>
+        <Alimentos:vitaminas>A, C, B1, B5, B6</Alimentos:vitaminas>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#Piña -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#Piña">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#Fruta"/>
+        <Alimentos:calorias rdf:datatype="http://www.w3.org/2001/XMLSchema#float">48.0</Alimentos:calorias>
+        <Alimentos:carbohidratos rdf:datatype="http://www.w3.org/2001/XMLSchema#float">12.63</Alimentos:carbohidratos>
+        <Alimentos:fibra rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.4</Alimentos:fibra>
+        <Alimentos:minerales>Potasio, Hierro, Calcio</Alimentos:minerales>
+        <Alimentos:nombre>pina</Alimentos:nombre>
+        <Alimentos:proteinas rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.54</Alimentos:proteinas>
+        <Alimentos:sabor>Agridulce</Alimentos:sabor>
+        <Alimentos:transgenico rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</Alimentos:transgenico>
+        <Alimentos:vitaminas>A, C, B1, B6, B9, E</Alimentos:vitaminas>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#Remolacha -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#Remolacha">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#Verdura"/>
+        <Alimentos:calorias rdf:datatype="http://www.w3.org/2001/XMLSchema#float">43.0</Alimentos:calorias>
+        <Alimentos:carbohidratos rdf:datatype="http://www.w3.org/2001/XMLSchema#float">9.56</Alimentos:carbohidratos>
+        <Alimentos:fibra rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2.8</Alimentos:fibra>
+        <Alimentos:minerales>Potasio, Calcio, Hierro, Fosforo, Sodio</Alimentos:minerales>
+        <Alimentos:nombre>remolacha</Alimentos:nombre>
+        <Alimentos:proteinas rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.61</Alimentos:proteinas>
+        <Alimentos:sabor>Dulce</Alimentos:sabor>
+        <Alimentos:transgenico rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</Alimentos:transgenico>
+        <Alimentos:vitaminas>A, C, B6, B9</Alimentos:vitaminas>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#Sandia -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#Sandia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#Fruta"/>
+        <Alimentos:calorias rdf:datatype="http://www.w3.org/2001/XMLSchema#float">30.0</Alimentos:calorias>
+        <Alimentos:carbohidratos rdf:datatype="http://www.w3.org/2001/XMLSchema#float">8.0</Alimentos:carbohidratos>
+        <Alimentos:fibra rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.4</Alimentos:fibra>
+        <Alimentos:grasas rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</Alimentos:grasas>
+        <Alimentos:minerales>Potasio</Alimentos:minerales>
+        <Alimentos:nombre>sandia</Alimentos:nombre>
+        <Alimentos:transgenico rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</Alimentos:transgenico>
+        <Alimentos:vitaminas>A, B, C</Alimentos:vitaminas>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#Tomate -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#Tomate">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#Verdura"/>
+        <Alimentos:calorias rdf:datatype="http://www.w3.org/2001/XMLSchema#float">18.0</Alimentos:calorias>
+        <Alimentos:carbohidratos rdf:datatype="http://www.w3.org/2001/XMLSchema#float">3.89</Alimentos:carbohidratos>
+        <Alimentos:fibra rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.2</Alimentos:fibra>
+        <Alimentos:grasas rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</Alimentos:grasas>
+        <Alimentos:minerales>Calcio, Fosforo, Potasio, Sodio</Alimentos:minerales>
+        <Alimentos:nombre>tomate</Alimentos:nombre>
+        <Alimentos:transgenico rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</Alimentos:transgenico>
+        <Alimentos:vitaminas>A, B1, B2, C</Alimentos:vitaminas>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#Yogurt_batido -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#Yogurt_batido">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#Lacteo"/>
+        <Alimentos:calorias rdf:datatype="http://www.w3.org/2001/XMLSchema#float">97.0</Alimentos:calorias>
+        <Alimentos:carbohidratos rdf:datatype="http://www.w3.org/2001/XMLSchema#float">15.0</Alimentos:carbohidratos>
+        <Alimentos:grasas rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2.8</Alimentos:grasas>
+        <Alimentos:minerales>Magensio, Fosforo, Calcio</Alimentos:minerales>
+        <Alimentos:nombre>yogurt_batido</Alimentos:nombre>
+        <Alimentos:proteinas rdf:datatype="http://www.w3.org/2001/XMLSchema#float">8.0</Alimentos:proteinas>
+        <Alimentos:sabor>Frutilla, Durazno, Coco</Alimentos:sabor>
+        <Alimentos:transgenico rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</Alimentos:transgenico>
+        <Alimentos:vitaminas>B7, A, B3</Alimentos:vitaminas>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#Yogurt_frutado -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#Yogurt_frutado">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#Lacteo"/>
+        <Alimentos:calorias rdf:datatype="http://www.w3.org/2001/XMLSchema#float">95.0</Alimentos:calorias>
+        <Alimentos:carbohidratos rdf:datatype="http://www.w3.org/2001/XMLSchema#float">14.3</Alimentos:carbohidratos>
+        <Alimentos:grasas rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2.3</Alimentos:grasas>
+        <Alimentos:nombre>yogurt_frutado</Alimentos:nombre>
+        <Alimentos:proteinas rdf:datatype="http://www.w3.org/2001/XMLSchema#float">3.8</Alimentos:proteinas>
+        <Alimentos:transgenico rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</Alimentos:transgenico>
+        <Alimentos:vitaminas>B7, B9, A, B3</Alimentos:vitaminas>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#Yogurt_natural -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#Yogurt_natural">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#Lacteo"/>
+        <Alimentos:calorias rdf:datatype="http://www.w3.org/2001/XMLSchema#float">63.0</Alimentos:calorias>
+        <Alimentos:carbohidratos rdf:datatype="http://www.w3.org/2001/XMLSchema#float">12.0</Alimentos:carbohidratos>
+        <Alimentos:grasas rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2.0</Alimentos:grasas>
+        <Alimentos:minerales>Calcio, Fosforo, Magnesio, Zinc</Alimentos:minerales>
+        <Alimentos:nombre>yogurt_natural</Alimentos:nombre>
+        <Alimentos:transgenico rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</Alimentos:transgenico>
+        <Alimentos:vitaminas>B, A</Alimentos:vitaminas>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#Zanahoria -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#Zanahoria">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/3/Alimentos#Verdura"/>
+        <Alimentos:calorias rdf:datatype="http://www.w3.org/2001/XMLSchema#float">41.0</Alimentos:calorias>
+        <Alimentos:carbohidratos rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.3</Alimentos:carbohidratos>
+        <Alimentos:fibra rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.8</Alimentos:fibra>
+        <Alimentos:minerales>Potasio, Fosforo, Magnesio, Yodo, Calcio</Alimentos:minerales>
+        <Alimentos:nombre>zanahoria</Alimentos:nombre>
+        <Alimentos:transgenico rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</Alimentos:transgenico>
+        <Alimentos:vitaminas>A, B3, E, K</Alimentos:vitaminas>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
